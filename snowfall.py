@@ -34,6 +34,7 @@ class Flake:
     def reset(self):
         if self.y > height:
             self.y = random.randint(-800, -10)
+            self.direction = random.randint(-10, 10)
 
     def wind(self):
         user = pygame.mouse.get_pos()[0] - width/2
